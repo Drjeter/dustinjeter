@@ -34,25 +34,24 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/80 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-6'
-      }`}
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/80 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-6'
+        }`}
     >
       <nav className="container mx-auto px-6 flex justify-between items-center">
-        <a 
-          href="#" 
+        <a
+          href="#"
           onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
           className="text-2xl font-bold text-slate-800 tracking-tight"
         >
-          Zen<span className="text-indigo-600 font-light italic">Design</span>
+          Dustin<span className="text-indigo-600 font-light italic">Jeter</span>
         </a>
 
         {/* Desktop Nav */}
         <ul className="hidden md:flex space-x-8 items-center">
           {NAV_ITEMS.map((item) => (
             <li key={item.label}>
-              <a 
+              <a
                 href={item.href}
                 onClick={(e) => scrollToSection(e, item.href)}
                 className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors"
@@ -62,8 +61,8 @@ const Header: React.FC = () => {
             </li>
           ))}
           <li>
-            <a 
-              href="#contact" 
+            <a
+              href="#contact"
               onClick={(e) => scrollToSection(e, '#contact')}
               className="px-5 py-2.5 bg-indigo-600 text-white rounded-full text-sm font-semibold hover:bg-indigo-700 transition-all transform hover:scale-105 active:scale-95 shadow-md"
             >
@@ -73,7 +72,7 @@ const Header: React.FC = () => {
         </ul>
 
         {/* Mobile Toggle */}
-        <button 
+        <button
           className="md:hidden text-slate-800 p-2"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
@@ -93,7 +92,7 @@ const Header: React.FC = () => {
           <ul className="space-y-4">
             {NAV_ITEMS.map((item) => (
               <li key={item.label}>
-                <a 
+                <a
                   href={item.href}
                   className="block text-slate-600 font-medium py-2"
                   onClick={(e) => scrollToSection(e, item.href)}
