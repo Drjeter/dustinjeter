@@ -1,20 +1,28 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Dustin Jeter - Freelance Web Developer
 
-# Run and deploy your AI Studio app
+**Live Portfolio:** [https://dustinjeter.vercel.app/](https://dustinjeter.vercel.app/)
 
-This contains everything you need to run your app locally.
+## Project: Freelance Studio Portfolio
 
-View your app in AI Studio: https://ai.studio/apps/drive/1G7BNwF0gXSDnBbQM_nDIoSfSHolGxu8w
+This repository hosts the source code for my professional freelance portfolio, designed to market web design services to therapists, coaches, and small businesses.
 
-## Run Locally
+### 🎯 Objective
+The goal was to build a high-performance, conversion-focused landing page that establishes trust and authority. Unlike typical template-based sites, this project demonstrates a "custom-first" approach to digital identity.
 
-**Prerequisites:**  Node.js
+### 🛠️ Technical Strategy
 
+*   **Architecture**: Built as a static single-page application (SPA) using **React 19** and **TypeScript**. This ensures instant page loads and a fluid user experience (UX) that outperforms traditional CMS-heavy sites.
+*   **Styling System**: Implemented a custom design system with **Tailwind CSS**. I avoided generic component libraries to maintain full control over the visual hierarchy and branding, ensuring a truly custom "bespoke" feel.
+*   **Serverless Infrastructure**: Integrated **Formspree** for contact form submissions. This architectural choice enables robust lead generation without the overhead of maintaining a backend server, significantly reducing hosting costs and security surface area.
+*   **Performance**: Optimized for Core Web Vitals. The site achieves high performance scores through efficient asset bundling via **Vite** and proper semantic HTML structure.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### 💡 Key Features
+
+*   **Responsive Design**: Mobile-first architecture ensuring perfect rendering across all device sizes.
+*   **Type Safety**: Comprehensive TypeScript definitions to ensure code reliability and maintainability.
+*   **Modern Tooling**: Utilizes the latest React patterns (Hooks) and build tools for a modern development workflow.
+
+### 🔗 Connect
+
+*   **Portfolio**: [dustinjeter.vercel.app](https://dustinjeter.vercel.app/)
+*   **GitHub**: [github.com/Drjeter](https://github.com/Drjeter)
