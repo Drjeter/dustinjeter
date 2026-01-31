@@ -3,7 +3,7 @@ import React from 'react';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
-  
+
   const scrollToId = (id: string) => (e: React.MouseEvent) => {
     e.preventDefault();
     const element = document.getElementById(id);
@@ -16,14 +16,14 @@ const Footer: React.FC = () => {
       window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
     }
   };
-  
+
   return (
     <footer className="bg-slate-50 py-20">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-12 pb-16 border-b border-slate-200">
           <div className="max-w-sm">
-            <a 
-              href="#" 
+            <a
+              href="#"
               onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
               className="text-2xl font-bold text-slate-800 tracking-tight inline-block mb-4"
             >
@@ -44,10 +44,10 @@ const Footer: React.FC = () => {
             </ul>
           </div>
         </div>
-        
+
         <div className="max-w-6xl mx-auto pt-10 flex flex-col sm:flex-row justify-between items-center gap-6 text-center sm:text-left">
           <p className="text-xs text-slate-400 font-medium uppercase tracking-widest">
-            &copy; {currentYear} ZenDesign Studio. All interactions are secure.
+            &copy; {currentYear} Dustin Jeter Studio. All interactions are secure.
           </p>
           <div className="flex flex-wrap justify-center gap-6">
             <span className="text-[10px] font-bold text-slate-300 uppercase tracking-tighter">Independent Studio</span>

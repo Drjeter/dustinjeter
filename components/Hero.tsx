@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-indigo-700 uppercase bg-indigo-50 rounded-full">
-            Bespoke Web Design
+            Custom Web Design
           </div>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-slate-900 leading-tight mb-8">
             Websites for Therapists, Coaches, and <span className="text-indigo-600 italic">Small Businesses</span>
@@ -33,8 +33,8 @@ const Hero: React.FC = () => {
             Clean, mobile-friendly websites built from scratch to help your business look professional and attract clients. No bloat, just performance.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a 
-              href="#contact" 
+            <a
+              href="#contact"
               onClick={scrollToId('contact')}
               className="px-8 py-4 bg-indigo-600 text-white rounded-full text-lg font-semibold hover:bg-indigo-700 transition-all shadow-xl hover:shadow-indigo-200/50 flex items-center justify-center group"
             >
@@ -43,8 +43,8 @@ const Hero: React.FC = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </a>
-            <a 
-              href="#portfolio" 
+            <a
+              href="#portfolio"
               onClick={scrollToId('portfolio')}
               className="px-8 py-4 bg-white text-slate-700 border border-slate-200 rounded-full text-lg font-semibold hover:bg-slate-50 transition-all flex items-center justify-center shadow-sm"
             >

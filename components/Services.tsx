@@ -31,20 +31,19 @@ const Services: React.FC<ServicesProps> = ({ onSelectPackage }) => {
 
         <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {SERVICE_PACKAGES.map((pkg) => (
-            <div 
-              key={pkg.id} 
-              className={`relative p-8 md:p-10 rounded-3xl transition-all duration-300 ${
-                pkg.isPopular 
-                ? 'bg-slate-900 text-white shadow-2xl scale-105 z-10 ring-4 ring-indigo-500/20' 
-                : 'bg-slate-50 text-slate-900 hover:bg-white hover:shadow-xl'
-              }`}
+            <div
+              key={pkg.id}
+              className={`relative p-8 md:p-10 rounded-3xl transition-all duration-300 ${pkg.isPopular
+                  ? 'bg-slate-900 text-white shadow-2xl scale-105 z-10 ring-4 ring-indigo-500/20'
+                  : 'bg-slate-50 text-slate-900 hover:bg-white hover:shadow-xl'
+                }`}
             >
               {pkg.isPopular && (
                 <div className="absolute top-0 right-10 -translate-y-1/2 bg-indigo-600 text-white text-xs font-bold uppercase tracking-widest py-1.5 px-4 rounded-full shadow-lg">
                   Most Popular
                 </div>
               )}
-              
+
               <h3 className="text-xl font-bold mb-2">{pkg.name}</h3>
               <div className="flex items-baseline gap-1 mb-8">
                 <span className="text-4xl font-bold tracking-tight">{pkg.price}</span>
@@ -62,14 +61,13 @@ const Services: React.FC<ServicesProps> = ({ onSelectPackage }) => {
                 ))}
               </ul>
 
-              <a 
-                href="#contact" 
+              <a
+                href="#contact"
                 onClick={(e) => handleSelect(e, pkg.name)}
-                className={`block text-center py-4 rounded-xl font-bold transition-all ${
-                  pkg.isPopular 
-                  ? 'bg-white text-slate-900 hover:bg-slate-100 shadow-md' 
-                  : 'bg-slate-900 text-white hover:bg-slate-800'
-                }`}
+                className={`block text-center py-4 rounded-xl font-bold transition-all ${pkg.isPopular
+                    ? 'bg-white text-slate-900 hover:bg-slate-100 shadow-md'
+                    : 'bg-slate-900 text-white hover:bg-slate-800'
+                  }`}
               >
                 Choose {pkg.name}
               </a>
@@ -79,7 +77,7 @@ const Services: React.FC<ServicesProps> = ({ onSelectPackage }) => {
 
         <div className="mt-20 p-8 rounded-3xl bg-indigo-50/50 border border-indigo-100 text-center max-w-4xl mx-auto">
           <p className="text-indigo-900 font-medium italic">
-            Looking for something custom? <a href="#contact" onClick={(e) => handleSelect(e, 'Custom Quote')} className="underline hover:text-indigo-700">Contact me</a> for a bespoke quote tailored to your specific requirements.
+            Looking for something custom? <a href="#contact" onClick={(e) => handleSelect(e, 'Custom Quote')} className="underline hover:text-indigo-700">Contact me</a> for a custom quote tailored to your specific requirements.
           </p>
         </div>
       </div>
