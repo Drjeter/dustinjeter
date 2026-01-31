@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
               onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
               className="text-2xl font-bold text-slate-800 tracking-tight inline-block mb-4"
             >
-              Zen<span className="text-indigo-600 font-light italic">Design</span>
+              Dustin<span className="text-indigo-600 font-light italic">Jeter</span>
             </a>
             <p className="text-slate-500 font-light leading-relaxed">
               Helping therapists and small business owners build trust through minimalist, professional web design.
