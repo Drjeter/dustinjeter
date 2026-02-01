@@ -13,7 +13,7 @@ export const PROJECTS: Project[] = [
     id: 'bow-sewing',
     title: 'Bow Sewing Centre',
     description: 'School uniforms, professional alterations, and embroidery services in Bow, London. Use this site to view services and location.',
-    imageUrl: 'https://picsum.photos/seed/bow-sewing/800/600',
+    imageUrl: 'https://bow-sewing-centre.vercel.app/images/hero/sewing-services-hero.png',
     liveUrl: 'https://bow-sewing-centre.vercel.app/',
   },
 ];

@@ -54,7 +54,7 @@ const Portfolio: React.FC = () => {
                       </svg>
                     </a>
                     <span className="text-xs font-bold text-slate-300 tracking-widest uppercase">
-                      Built in 2024
+                      Built in 2026
                     </span>
                   </div>
                 </div>
